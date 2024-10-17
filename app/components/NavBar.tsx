@@ -1,10 +1,10 @@
 // app/components/Navbar.tsx
-'use client'
-import Link from 'next/link';
-import Image from 'next/image';
-import Logo from '../images/logo.png'
-import Lenis from '@studio-freight/lenis';
-import { useEffect, useState } from 'react';
+"use client"
+import Link from "next/link";
+import Image from "next/image";
+import Logo from "../images/logo.png"
+import Lenis from "@studio-freight/lenis";
+import { useEffect, useState } from "react";
 
 interface LenisScrollEvent {
  direction: number;
@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
   let previousDirection = 0;
 
   // Add the scroll event listener
-  lenis.on('scroll', (e: LenisScrollEvent) => {
+  lenis.on("scroll", (e: LenisScrollEvent) => {
    const { direction } = e;
    if (direction !== previousDirection) {
     setIsNavbarVisible(direction <= 0);
@@ -48,14 +48,14 @@ const Navbar: React.FC = () => {
  return (
   <nav
    className={`sticky top-0 pt-2 transition-all duration-500 ease-in-out z-50 ${isNavbarVisible
-     ? 'opacity-100 transform translate-y-0'
-     : 'opacity-0 transform -translate-y-full'
+    ? "opacity-100 transform translate-y-0"
+    : "opacity-0 transform -translate-y-full"
     }`}
   >
    <div className="px-5">
     <div className="flex justify-between items-center h-16">
      <div className="flex-shrink-0">
-      <Link href="/" className='text-xl font-bold' passHref>
+      <Link href="/" className="text-xl font-bold" passHref>
        <Image
         src={Logo} // Path to your logo
         alt="Software and web development logo / parallax scrolling"
