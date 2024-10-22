@@ -20,20 +20,20 @@ const Navbar: React.FC = () => {
         }`}
     >
       <div className="px-5">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-16 text-xl">
           <div className="flex-shrink-0">
             <Link href="/" className="text-xl font-bold" passHref>
               <Image src={Logo} alt="Logo" />
             </Link>
           </div>
           <div className="hidden md:flex space-x-4">
-            <Link href="/about" className="hover:text-gray-500" passHref>
+            <Link href="/about" className="hover:text-purple-500" passHref>
               work
             </Link>
-            <Link href="/services" className="hover:text-gray-500" passHref>
+            <Link href="/services" className="hover:text-purple-500" passHref>
               about me
             </Link>
-            <Link href="/contact" className="hover:text-gray-500" passHref>
+            <Link href="/contact" className="hover:text-purple-500" passHref>
               let's get in touch
             </Link>
           </div>
