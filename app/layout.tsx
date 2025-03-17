@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SmoothScrolling from "./components/SmoothScrolling";
+import SmoothScrolling from "./sections/SmoothScrolling";
 // import { Inter } from "next/font/google";
-import Background from "./components/Background";
+import Background from "./sections/Background";
 import { League_Spartan } from 'next/font/google';
 
 const leagueSpartan = League_Spartan({

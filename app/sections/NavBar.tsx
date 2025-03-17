@@ -3,7 +3,7 @@ import { useLenis } from 'lenis/react'
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../images/logo.png";
+import Logo from "../../public/images/logo.png";
 
 const Navbar: React.FC = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
